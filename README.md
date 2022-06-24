@@ -10,7 +10,8 @@ Split data folders into batches, each of which can then be processed on separate
 4. Run `bash bTB-reprocessing/install.bash`, entering sudo password requested.
 5. Type `screen` to open a new session which can be detached once the processing is running
 6. Run `bash bTB-reprocessing/run_jobs.sh $databucket $jobsheet $resultsbucket $resultsfolder $jobsToRun`
-    where   `$databucket` is s3 uri of the directory containing the jobsheet
+
+    where   `$databucket` is s3 uri of the directory containing the jobsheet    
             `$jobsheet` is the filename of the jobsheet
             `$resultsbucket` is s3 uri of the output bucket
             `$resultsfolder` is the directory name for the output files from the data processing
