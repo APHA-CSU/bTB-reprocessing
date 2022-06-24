@@ -16,4 +16,5 @@ Split data folders into batches, each of which can then be processed on separate
             `$resultsbucket` is s3 uri of the output bucket
             `$resultsfolder` is the directory name for the output files from the data processing
             `$jobsToRun` the job number to be selected for running from the jobsheet
-7. That's it.  The instance will automatically shutdown when the all batches have been processed.
+7. `ctl-A ctl-D` to detach from the screen which will leave the script running.  Lot out from the instance.
+8. That's it.  The instance will automatically shutdown when the all batches have been processed.  Logs will be saved on s3 to confirm completion.
